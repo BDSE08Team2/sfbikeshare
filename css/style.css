@@ -4,6 +4,72 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+
+/*--test--*/
+@import url(//fonts.googleapis.com/css?family=Lato:400,900);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+.info-card {
+  float: left;
+  margin: 10px;
+  -webkit-perspective: 600px;
+}
+
+.front, .back {
+  background: #FFF;
+  transition: -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.front {
+  margin: 3px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.back {
+  -webkit-transform: rotateY(-180deg);
+  overflow: scroll;
+}
+
+.info-card:hover .back {
+  -webkit-transform: rotateY(0);
+}
+
+.info-card:hover .front {
+  -webkit-transform: rotateY(180deg);
+}
+
+
+
+
+/* Social buttons */
+.social {
+  list-style: none;
+  padding: 0px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.social a {
+    position: relative;
+    display: inline-block;
+    min-width: 40px;
+    padding: 10px 0px;
+    margin: 0px 5px;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(215, 215, 215);
+    border-radius: 40px;
+  }
+
+
+
+/*--test--*/
+
 body a {
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
@@ -1092,6 +1158,24 @@ button.btn1.btn-1.btn-1b:hover {
     -ms-transition: 0.5s all;
 }
 
+.row {
+    width: 94%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row .row {
+    width: auto;
+    max-width: none;
+    margin-left: -20px;
+    margin-right: -20px;
+}
 
 
 #myBtn {
