@@ -17,6 +17,11 @@ html, body{
 	background: #ffffff;
 }
 /*-- header-top --*/
+
+.bg-gray {
+  background: #f8f8f8;
+}
+
 .header-top{
     background: #2B2B2B;
     padding: 1em 0;
@@ -957,6 +962,14 @@ h2.typoh2{
 	margin:2em 0;
 }
 /*-- contact --*/
+.addbg{
+  background-color: #f0f0f0;
+  margin-right: 5em;
+}
+.addin{
+  margin-left: 2em;
+}
+
 .contact {
     padding: 4em 0;
 }
@@ -978,7 +991,8 @@ h2.typoh2{
     border: none;
 }
 .address {
-     margin: 6em 0 0;
+     margin: 6em 3em 0 3em;
+
 }
 .address-grids {
 	padding: 0;
@@ -1542,10 +1556,13 @@ button.btn1.btn-1.btn-1b:hover {
 		font-size: .8em;
 	}
 	.about-team {
-		margin: 2em 0 0 0;
+		margin: 2em 5em 0 5em;
+    padding: 0em 5em 0 5em;
 	}
 	.team-grids {
 		margin-top: 2em;
+    margin-right: 10em;
+    margin-left: 10em;
 	}
 	.gallery-grid {
 		float: none;
